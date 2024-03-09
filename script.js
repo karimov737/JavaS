@@ -1,8 +1,8 @@
 // Запрашиваем у пользователя имя и возраст
 var name = prompt("Your Name:");
-var age = prompt("Age:");
-
-
+console.log("Hello " + name);
+var age = +prompt("Age:");
+console.log(name + " is " + age + " years old");
 var results = [];
 
 // Function to check the user's answer
@@ -54,7 +54,7 @@ results.push(checkAnswer('ex 12 : 100 / 3', +prompt('100 / 3 = '), ex12));
 var ex13 = 10 % 4;
 results.push(checkAnswer('ex 13 : 10 % 4', +prompt('10 % 4 = '), ex13));
 
-var ex14 = 170 / 8;
+var ex14 = 170 % 8;
 results.push(checkAnswer('ex 14 : 170 % 8', +prompt('170 % 8 = '), ex14));
 
 var ex15 = 84 % 3;
@@ -65,5 +65,5 @@ results.push(checkAnswer('ex 15 : 84 % 3', +prompt('84 % 3 = '), ex15));
 results.forEach(function(result) {
     console.log(result.expression + ' = ' + result.userAnswer + ' User`s Answer' +', Correct Answer: ' + result.correctAnswer);
 });
-
+window.open.console.log = alert("Open console ? ")
 
